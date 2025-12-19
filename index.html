@@ -3,47 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kasuni Daundasekara | Plant Molecular Biologist</title>
+  <title>Kasuni D. | Plant Molecular Biologist</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
       margin: 0;
-      padding: 0;
       background-color: #f7f7f7;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #1f2933;
-      color: #ffffff;
-      padding: 40px 20px;
+      background-image: url('wallpaper.jpg');
+      background-size: cover;
+      background-position: center;
       text-align: center;
+      color: #ffffff;
+      padding: 90px 20px 60px;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      object-fit: cover;
+      margin-bottom: 15px;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.4em;
+      margin: 10px 0 5px;
+      font-size: 2.5em;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 1.1em;
-      color: #cbd5e1;
+      margin: 0;
+      font-size: 1.2em;
+      color: #e5e7eb;
+    }
+
+    .social-icons {
+      margin-top: 18px;
+    }
+
+    .social-icons a {
+      color: #ffffff;
+      font-size: 28px;
+      margin: 0 12px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #93c5fd;
     }
 
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 30px 20px;
       background: #ffffff;
+      padding: 40px 25px;
     }
 
     h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 5px;
       margin-top: 40px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
       color: #111827;
     }
 
@@ -51,20 +96,22 @@
       padding-left: 20px;
     }
 
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       font-size: 0.9em;
       color: #6b7280;
+      background-color: #f3f4f6;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .profile-pic {
+        width: 130px;
+        height: 130px;
+      }
     }
   </style>
 </head>
@@ -72,51 +119,64 @@
 <body>
 
   <header>
-    <h1>Kasuni Daundasekara</h1>
+    <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+
+    <h1>Kasuni D.</h1>
     <p>Plant Molecular Biology | Genomics | Crop Improvement</p>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN"
+         target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://www.researchgate.net/profile/YOUR_PROFILE"
+         target="_blank" aria-label="ResearchGate">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </div>
   </header>
 
   <div class="container">
 
     <h2>About Me</h2>
     <p>
-      I am a research scientist specializing in plant molecular biology, genomics,
-      and crop improvement. My research integrates comparative genomics, CRISPR/Cas9,
-      and functional genetics to understand plant adaptation and improve agricultural
-      sustainability.
+      I am a research scientist specializing in plant molecular biology,
+      genomics, and crop improvement. My research integrates comparative
+      genomics, CRISPR/Cas9, and functional genetics to understand plant
+      adaptation and develop sustainable agricultural solutions.
     </p>
 
     <h2>Research Interests</h2>
     <ul>
       <li>Plant molecular biology and functional genomics</li>
-      <li>Crop adaptation and stress tolerance</li>
+      <li>Crop adaptation and abiotic stress tolerance</li>
       <li>CRISPR/Cas9 and genome editing</li>
-      <li>Bioinformatics and comparative genomics</li>
+      <li>Comparative genomics and bioinformatics</li>
     </ul>
 
     <h2>Experience</h2>
     <p>
       <strong>Research Scientist</strong><br>
-      Prairie View A&M University
+      McKenna Lab, University of Memphis
     </p>
 
     <h2>Publications</h2>
     <p>
-      (Add your publications here)
+      (Add your publications with DOI links here)
     </p>
 
     <h2>Skills</h2>
     <ul>
-      <li>NGS, genome assembly, and annotation</li>
-      <li>CRISPR/Cas9 and plant transformation</li>
+      <li>Next-Generation Sequencing (NGS)</li>
+      <li>Genome assembly, annotation, and phylogenomics</li>
+      <li>CRISPR/Cas9, plant transformation, tissue culture</li>
       <li>R, Python, Linux/Unix</li>
     </ul>
 
     <h2>Contact</h2>
     <p>
-      Email: <a href="mailto:yourname@email.com">yourname@email.com</a><br>
-      GitHub: <a href="https://github.com/yourusername">yourusername</a><br>
-      Google Scholar | LinkedIn
+      Email: <a href="mailto:yourname@email.com">yourname@email.com</a>
     </p>
 
   </div>
@@ -127,8 +187,3 @@
 
 </body>
 </html>
-
-
-
-
-
